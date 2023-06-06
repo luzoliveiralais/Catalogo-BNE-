@@ -1,0 +1,686 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=League+Spartan:wght@800&family=Montserrat&family=Space+Grotesk&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+    background-color: #e3f0ff;
+  /* define a ocupação da tela toda */
+}
+
+.container-nav {
+    max-width: 1300px;
+    min-width: 300px; 
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 100px;
+}
+
+nav .menu-icon {
+    cursor: pointer; /* define a ocupação da tela toda */
+    display: none; /* esconde o ícone */
+}
+
+nav .logo {
+
+    align-items: center;
+    display: flex;
+
+}
+nav .logo #img-logo {
+    width: 50%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center; /* centraliza os elementos da ul na horizontal */
+
+}
+
+
+nav ul li {
+    padding: 0 15px;
+}
+
+nav ul li a{
+    text-decoration: none; /* tira a decoração do texto */
+    text-transform: uppercase;
+    color: #5654b3;
+    border-color: #e3f0ff;
+    
+}
+
+nav ul li a:hover{
+    color: #f1676d;
+    transition: color 0.4s;
+
+}
+
+nav ul button {
+    border: none;
+    background-color: #5654b3;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-left: 20px;
+    cursor: pointer;
+    border: 2px solid #5654b3;
+}
+
+nav ul button:hover {
+    background-color: #e3f0ff;
+    border-color: #372c62;
+    color: #372c62;
+    transition: color 0.4s;
+
+}
+
+
+/* Página 1 - Apresentação principal */
+main {
+    display: flex;
+    padding: 1%;
+    padding-left: 10%;
+    max-width: 100vw;
+    min-width: 300px;
+    align-items: center;
+    justify-content:space-between;
+    flex-direction: row;
+}
+
+.text-bx{
+    width: 40%;
+    padding-right: 20px;
+}
+
+.text-bx h1 {
+    font-size: 3rem;
+    color: #f1676d;
+}
+
+.text-bx h2 {
+    color: #372c62;
+}
+
+.text-bx p {
+    font-size: 1.2rem;
+    color: #372c62; 
+    font-weight: 400;
+    margin-top: 20px; 
+}
+
+.text-bx .pesquisa-bx {
+    margin: 20px 0; 
+    display: flex;
+
+}
+
+.text-bx .pesquisa-bx input {
+    width: 60%;
+    display: block;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: #8997b9;
+    font-size: 16px;
+}
+
+.text-bx .pesquisa-bx input::placeholder {
+    color: #8997b9;
+}
+
+.text-bx .pesquisa-bx button {
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    background-color: #5654b3;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.text-bx .pesquisa-bx button:hover{
+    background-color:#f1676d; 
+}
+
+.midias-sociais {
+    margin-top: 15px;
+}
+
+.midias-sociais i {
+    font-size: 23px;
+    margin: 0 3px;
+    color: white;
+    background-color: #372c62;
+    padding: 7px;
+    border-radius: 5px;
+
+}
+
+.img-box {
+    width: 60%;
+}
+
+.img-box img {
+    width: 90%;
+    padding-left: 9%
+}
+
+
+/* Página Inicial - Prévia catálogo pagina inicial */
+
+section{
+    display: flex;
+    background-color:#f8d7a1; 
+    max-width: 100vw;
+    min-width: 300px;
+    justify-content:center;
+}
+
+.catalogo-bx{
+    max-width: 100vw;
+    padding: 10%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-direction: row;
+}
+
+.livro-item {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    min-height: 420px;
+    max-width: 300px;
+    border: 3px solid rgb(230, 227, 227);
+    border-radius: 5px;
+    margin: 15px;
+    padding: 1%;
+    background-color: #e7dedf72;
+    box-shadow: 15px 15px 10px rgba(186, 185, 185, 0.491);
+}
+
+.capa-bx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.capa-livro{
+    max-width: 50%;
+    width: 147px;
+    height: 213px;
+}
+
+.livro-content{
+    margin: 4%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+
+.info-livros-bx{
+    min-height: 70px;
+    margin-top: 8%;
+}
+
+
+.livro-content h3 {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.livro-content p {
+    text-align: center;
+    margin-top: 1%;
+}
+
+.interacao-catalogo {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.livro-content button {
+    border: none;
+    background-color: #7271b3;
+    color: white;
+    padding: 6px 30px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 8%;
+    border-radius: 4px;
+    border: 2px solid  #7271b3 ;
+}
+
+.livro-content button:hover{
+    background-color: #e7dedf72;
+    border-color: #372c62;
+    color: #372c62;
+    transition: color 0.4s;
+}
+
+
+
+/* Página Inicial - textinho 2 */
+
+.dois{
+    max-width: 100vw;
+    background-color:#e3f0ff;
+    padding: 10% 10%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-direction: row;
+}
+
+
+.img-frase-bx img {
+    max-width: 100%;
+    
+}
+
+.text-frase-bx {
+    margin-left: 8%;
+}
+
+.text-frase-bx h4{
+    font-size: 2rem;
+    color: #f1676d;
+    margin-bottom: 1%;
+    margin-top: 7%;
+}
+
+.text-frase-bx p {
+    color: #372c62;
+    font-size: 1.2rem;
+
+}
+
+
+/* Página do Formulário */
+
+.form-bx {
+    background-color: rgba(198, 42, 234, 0.141);
+    border-radius: 80px;
+    border-width: 2px;
+    margin-top: 45px;
+    margin-left: 10%;
+    max-width: 1200px;
+    padding:3% 1% 3% 1%;
+    margin-bottom: 3%;
+   
+}
+
+.form-bx .formulario{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+
+}
+
+form h1 {
+    font-size: 1.7rem;
+    color: #f1676d;
+    padding: 5%;
+
+}
+
+form h2{
+    font-size: 1.7rem;
+    color: #f1676d;
+    padding: 5%;
+}
+
+.grupo {
+    padding: 2%;
+}
+
+form label {
+    color: #372c62; 
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 20px; 
+    padding: 2%;
+}
+
+form input {
+    margin: 1%;
+    width: 90%;
+    height: 40%;
+    border: none;
+    outline: none;
+    color: #8997b9;
+    font-size: 16px;
+    padding: 3%;
+}
+
+form input::placeholder {
+    color: #8997b9;
+}
+
+form #button-enviar {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+form button{
+    width: 40%;
+    height: 20%;
+    margin-right: 8%;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    background-color: #5654b3;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 5%;
+}
+
+/* Página Sobre */
+
+.main-sobre-box main{
+    margin-top: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-direction: row;
+    
+}
+
+.img-box-about {
+    min-width: 30%;
+}
+
+.img-box-about img{
+    width: 100%;
+    padding-left: 10%
+}
+
+.text-bx-about h1{
+    font-size: 3rem;
+    color: #f1676d;
+}
+
+.text-bx-about p {
+    padding: 1%;
+}
+
+section .text-bx-about #button-about{
+    width: 40%;
+    height: 20%;
+    margin-right: 8%;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    background-color: #5654b3;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 5%;
+}
+
+
+
+/*Biblioteca*/
+/*Side bar filtro*/
+.pesquisa-livros-biblio{
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.pesquisa-livros-biblio-bx{
+    margin: 45px;
+    border-radius: 80px;
+    background-color: rgba(198, 42, 234, 0.141);
+    width: 80%;
+    
+    
+}
+
+.pesquisa-biblio-bx{
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.filtros-bx{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#imput-biblio{
+    width: 60%;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: #8997b9;
+    font-size: 16px;
+}
+
+#button-biblio{
+    outline: none;
+    border: none;
+    height: 50px;
+    padding: 10px;
+    background-color: #5654b3;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    border: 2px solid #5654b3;
+    margin: none;
+}
+
+.filtros {
+    margin: 2%;
+}
+
+.filtros input {
+    height: 35px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.biblio-bx{
+    max-width: 100vw;
+}
+
+.catalogo-cont{
+    max-width: 100%;
+    margin-right: 17%;
+
+}
+
+.b-catalogo-bx {
+    padding: 2% 60%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+}
+
+.b-livro-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-width: 250px;
+    min-height: 420px;
+    max-width: 300px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    margin: 8px;
+    padding: 1%;
+    background-color: #cbdde772;
+    box-shadow: 5px 5px 10px rgba(186, 185, 185, 0.491);
+}
+
+.b-capa-bx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.b-capa-livro{
+    width: 147px;
+    height: 213px;
+}
+
+.b-livro-content{
+    margin: 4%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.b-livro-content .b-descricao-livro {
+    min-height: 70px;
+    
+}
+.b-livro-content h3 {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.b-livro-content p {
+    text-align: center;
+    margin-top: 1%;
+}
+
+.b-interacao-catalogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+
+}
+
+.b-livro-content button{
+    border: none;
+    background-color: #7271b3;
+    color: white;
+    padding: 6px 30px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 8%;
+    border-radius: 4px;
+    border: 2px solid  #7271b3;
+}
+
+.b-livro-content button:hover{
+    background-color: #e7dedf72;
+    border-color: #372c62;
+    color: #372c62;
+    transition: color 0.4s;
+}
+/*Rodapé*/
+
+.rodape {
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1676e72;
+    color: #3a3939;
+    font-size: 0.8rem;
+    text-align: center;
+    height: 50px;
+}
+
+ @media screen and (max-width: 800px) {
+    nav
+    {
+        flex-direction: column;
+        max-height: 260px;
+        font-size: 1.4rem;
+        margin-bottom: 5%;
+    }
+
+    nav ul 
+    {
+        flex-direction: column;
+        margin: 5%;
+    }
+
+    nav .logo 
+    {
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+    main 
+    {
+        margin-top: 35%;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding-left: 10%;
+    }
+
+    .text-bx{
+        margin-bottom: 2%;
+    }
+
+    .text-bx h1  {
+        font-size: 200%;
+        text-align: center;
+ 
+    }
+    .catalogo-bx {
+        flex-direction: column;
+    }
+
+    section .dois {
+        flex-direction: column;
+    }
+
+    .pesquisa-livros-biblio{
+        max-width: 60%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pesquisa-livros-biblio-bx {
+        flex-direction: column;
+
+    }
+
+    .filtros-bx {
+        flex-direction: column;
+    }
+
+    .b-catalogo-bx {
+        flex-direction: column;
+    }
+ }
+    

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bibliô</title>
+</head>
+<body>
+     <!--Navegador com logo-->
+    <div class="container-nav"> <!--Guarda as a codificação do navegador-->
+        <nav>
+            <div class="logo">
+                <img id="img-logo" src="imagens\novoLogoBiblio.png"> 
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="biblioteca.html">Bibliô</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="#">+Leitora</a></li>
+                <li><a href="#">PodCasts</a></li>
+                <li><a href="#">Fórum</a></li>
+                <button>Login</button>
+            </ul>
+            <div class="menu-icon"> 
+                <img src="menu.png">
+            </div>
+        </nav> 
+    </div>
+
+    <div class="pesquisa-livros-biblio">
+        <div class="pesquisa-livros-biblio-bx">
+            <div class="pesquisa-biblio-bx">
+                <input type="text" id="imput-biblio" placeholder="Busque um livro">
+                <button id="button-biblio">Buscar</button>
+            </div>
+            <div class="filtros-bx">
+                <div class="filtros">
+                    <input class="caixa" type="search" list="categorias-livros" placeholder="CATEGORIAS">
+                    <datalist id="categorias-livros" style="display:hidden;">
+                        <option value="Artes">
+                        <option value="Biografia e Autobiografia">
+                        <option Value="Crimes e Investigação">
+                        <option value="Ciência">
+                        <option value="Ficção e Ficção Científica">
+                        <option value="HQs">
+                        <option value="Romances">
+                        <option value="História">
+                        <option value="Poesia">
+                        <option value="Tecnologia">
+                        <option value="Humor">
+                        <option value="Terro">
+                    </datalist>
+                </div>
+                <div class="filtros">
+                    <input type="search" list="editoras" placeholder="EDITORAS">
+                    <datalist id="editoras" style="display:hidden;">
+                        <option value="Penguin Random House">
+                        <option value="Macmillan Publishers">
+                        <option Value="Editora Rocco">
+                        <option value="HarperCollins Brasil">
+                        <option value="Scholastic Corporation">
+                        <option value="Editora Intrínseca">
+                        <option value="Editora Globo">
+                    </datalist>
+                </div>
+
+                <div class="filtros">
+                    <input type="search" list="escritores" placeholder="AUTORES">
+                    <datalist id="escritores" style="display:hidden;">
+                        <option value="J.K. Rowling">
+                        <option value="Gabriel García Márquez">
+                        <option Value="George Orwell">
+                        <option value="Isabel Allende">
+                        <option value="Fyodor Dostoiévski">
+                        <option value="J.R.R. Tolkien">
+                        <option value="Lord Byron">
+                        <option value="Jane Austen">
+                    </datalist>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="biblio-bx">
+        <div class="catalogo-cont">
+            <div class="b-catalogo-bx">
+
+                <div class="b-livro-item">
+                    <div class="b-capa-bx">
+                        <img src="livros-catalogo\livros (1).jpg" alt="capa" class="b-capa-livro"/>
+                    </div>
+                    <div class="b-livro-content">
+                        <div class="b-descricao-livro">
+                            <h3>A Biblioteca da Meia-Noite</h3>
+                            <p>
+                                Matt Haig
+                            </p>
+                        </div>
+                        <div class="b-interacao-catalogo">
+                            <button type="button">Ler</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="b-livro-item">
+                    <div class="b-capa-bx">
+                        <img src="livros-catalogo\livros (2).jpg" alt="capa" class="b-capa-livro"/>
+                    </div>
+                    <div class="b-livro-content">
+                        <div class="b-descricao-livro">
+                            <h3>O Guia Definitivo do Mochileiro das Galáxias</h3>
+                            <p>
+                                Douglas Adams 
+                            </p>
+                        </div>
+                        <div class="b-interacao-catalogo">
+                            <button type="button">Ler</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="b-livro-item">
+                    <div class="b-capa-bx">
+                        <img src="livros-catalogo\livros (3).jpg" alt="capa" class="b-capa-livro"/>
+                    </div>
+                    <div class="b-livro-content">
+                        <div class="b-descricao-livro">
+                            <h3>O Senhor dos Anéis: As duas torres</h3>
+                            <p>
+                                J.R.R. Tolkien
+                            </p>
+                        </div>
+                        <div class="b-interacao-catalogo">
+                            <button type="button">Ler</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="b-livro-item">
+                    <div class="b-capa-bx">
+                        <img src="livros-catalogo\livros (4).jpg" alt="capa" class="b-capa-livro"/>
+                    </div>
+                    <div class="b-livro-content">
+                        <div class="b-descricao-livro">
+                            <h3>Epaminondas: O gato explicador</h3>
+                            <p>
+                                Clóvis de Barros Filho
+                            </p>
+                        </div>
+                        <div class="b-interacao-catalogo">
+                            <button type="button">Ler</button>
+                        </div>                   
+                    </div>
+                </div>
+            </div>
+
+            <div class="b-catalogo-bx">
+
+                <div class="b-livro-item">
+                    <div class="b-capa-bx">
+                        <img src="livros-catalogo\livros (5).jpg" alt="capa" class="b-capa-livro"/>
+                    </div>
+                    <div class="b-livro-content">
+                        <div class="b-descricao-livro">
+                            <h3>Hamlet (Shakespeare, o bardo de Avon)</h3>
+                            <p>
+                                William Shakespeare
+                            </p>
+                        </div>
+                        <div class="b-interacao-catalogo">
+                            <button type="button">Ler</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="b-livro-item">
+                    <div class="b-capa-bx">
+                        <img src="livros-catalogo\livros (6).jpg" alt="capa" class="b-capa-livro"/>
+                    </div>
+                    <div class="b-livro-content">
+                        <div class="b-descricao-livro">
+                            <h3>Marie Curie No País da Ciência</h3>
+                            <p>
+                                Irène Cohen-janca
+                            </p>
+                        </div>
+                        <div class="b-interacao-catalogo">
+                            <button type="button">Ler</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="b-livro-item">
+                    <div class="b-capa-bx">
+                        <img src="livros-catalogo\livros (7).jpg" alt="capa" class="b-capa-livro"/>
+                    </div>
+                    <div class="b-livro-content">
+                        <div class="b-descricao-livro">
+                            <h3>Todas As Suas Perfeições</h3>
+                            <p>
+                                Colleen Hoover
+                            </p>
+                        </div>
+                        <div class="b-interacao-catalogo">
+                            <button type="button">Ler</button>
+                        </div>                   
+                    </div>
+                </div>
+
+                <div class="b-livro-item">
+                    <div class="b-capa-bx">
+                        <img src="livros-catalogo\livros (8).jpg"  alt="capa" class="b-capa-livro"/>
+                    </div>
+                    <div class="b-livro-content">
+                        <div class="b-descricao-livro">
+                            <h3>O Gato que Amava Livros</h3>
+                            <p>
+                                Sosuke Natsukawa
+                            </p>
+                        </div>
+                        <div class="b-interacao-catalogo">
+                            <button type="button">Ler</button>
+                        </div>                   
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="b-catalogo-bx">
+
+                <div class="b-livro-item">
+                    <div class="b-capa-bx">
+                        <img src="livros-catalogo\livros (9).jpg" alt="capa" class="b-capa-livro"/>
+                    </div>
+                    <div class="b-livro-content">
+                        <div class="b-descricao-livro">
+                            <h3>Em Busca de Mim</h3>
+                            <p>
+                                Viola Davis
+                            </p>
+                        </div>
+                        <div class="b-interacao-catalogo">
+                            <button type="button">Ler</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="b-livro-item">
+                    <div class="b-capa-bx">
+                        <img src="livros-catalogo\livros (10).jpg"  alt="capa" class="b-capa-livro"/>
+                    </div>
+                    <div class="b-livro-content">
+                        <div class="b-descricao-livro">
+                            <h3>1984</h3>
+                            <p>
+                                George Orwell
+                            </p>
+                        </div>
+                        <div class="b-interacao-catalogo">
+                            <button type="button">Ler</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="b-livro-item">
+                    <div class="b-capa-bx">
+                        <img src="livros-catalogo\livros (11).jpg" alt="capa" class="b-capa-livro"/>
+                    </div>
+                    <div class="b-livro-content">
+                        <div class="b-descricao-livro">
+                            <h3>A Cinderela está Morta</h3>
+                            <p>
+                                Kalynn Bayron
+                            </p>
+                        </div>
+                        <div class="b-interacao-catalogo">
+                            <button type="button">Ler</button>
+                        </div>                   
+                    </div>
+                </div>
+
+                <div class="b-livro-item">
+                    <div class="b-capa-bx">
+                        <img src="livros-catalogo\livros (12).jpg" alt="capa" class="b-capa-livro"/>
+                    </div>
+                    <div class="b-livro-content">
+                        <div class="b-descricao-livro">
+                            <h3>A Sociedade do Anel</h3>
+                            <p>
+                                J.R.R. Tolkien
+                            </p>
+                        </div>
+                        <div class="b-interacao-catalogo">
+                            <button type="button">Ler</button>
+                        </div>                   
+                    </div>
+                </div>
+            </div>
+
+            <div class="b-catalogo-bx">
+
+                <div class="b-livro-item">
+                    <div class="b-capa-bx">
+                        <img src="livros-catalogo\livros (13).jpg" alt="capa" class="b-capa-livro"/>
+                    </div>
+                    <div class="b-livro-content">
+                        <div class="b-descricao-livro">
+                            <h3>O Retorno do Rei</h3>
+                            <p>
+                                J.R.R. Tolkien
+                            </p>
+                        </div>
+                        <div class="b-interacao-catalogo">
+                            <button type="button">Ler</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="b-livro-item">
+                    <div class="b-capa-bx">
+                        <img src="livros-catalogo\livros (14).jpg" alt="capa" class="b-capa-livro"/>
+                    </div>
+                    <div class="b-livro-content">
+                        <div class="b-descricao-livro">
+                            <h3>O Hobbit</h3>
+                            <p>
+                                J.R.R. Tolkien
+                            </p>
+                        </div>
+                        <div class="b-interacao-catalogo">
+                            <button type="button">Ler</button>
+                        </div>                   
+                    </div>
+                </div>
+        
+                <div class="b-livro-item">
+                    <div class="b-capa-bx">
+                        <img src="livros-catalogo\livros (15).jpg"  alt="capa" class="b-capa-livro">
+                    </div>
+                    <div class="b-livro-content">
+                        <div class="b-descricao-livro">
+                            <h3>Uma breve história do tempo</h3>
+                            <p>
+                                Stephen Hawking
+                            </p>
+                        </div>
+                        <div class="b-interacao-catalogo">
+                            <button type="button">Ler</button>
+                        </div>
+                        
+                    </div>
+                </div>
+        
+                <div class="b-livro-item">
+                    <div class="b-capa-bx">
+                        <img src="livros-catalogo\livros (16).jpg" alt="capa" class="b-capa-livro">
+                    </div>
+                    <div class="b-livro-content">
+                        <div class="b-descricao-livro">
+                            <h3>Takagi: A Mestra das Pegadinhas - 15</h3>
+                            <p>
+                                Soichiro Yamamoto
+                            </p>
+                        </div>
+                        <div class="b-interacao-catalogo">
+                            <button type="button">Ler</button>
+                        </div>                   
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="b-catalogo-bx">
+
+                <div class="b-livro-item">
+                    <div class="b-capa-bx">
+                        <img src="livros-catalogo\livros (17).jpg" alt="capa" class="b-capa-livro"/>
+                    </div>
+                    <div class="b-livro-content">
+                        <div class="b-descricao-livro">
+                            <h3>A Arte da Guerra</h3>
+                            <p>
+                                Sun Tzu
+                            </p>
+                        </div>
+                        <div class="b-interacao-catalogo">
+                            <button type="button">Ler</button>
+                        </div>
+                        
+                    </div>
+                </div>
+        
+                <div class="b-livro-item">
+                    <div class="b-capa-bx">
+                        <img src="livros-catalogo\livros (18).jpg" alt="capa" class="b-capa-livro"/>
+                    </div>
+                    <div class="b-livro-content">
+                        <div class="b-descricao-livro">
+                            <h3>Dom Casmurro</h3>
+                            <p>
+                                Machado De Assis
+                            </p>
+                        </div>
+                        <div class="b-interacao-catalogo">
+                            <button type="button">Ler</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="b-livro-item">           
+                    <div class="b-capa-bx">
+                        <img src="livros-catalogo\livros (19).jpg" alt="capa" class="b-capa-livro"/>
+                    </div>
+                    <div class="b-livro-content">
+                        <div class="b-descricao-livro">
+                            <h3>A Menina que Roubava Livros</h3>
+                            <p>
+                                Markus Zusak
+                            </p>
+                        </div>
+                        <div class="b-interacao-catalogo">
+                            <button type="button">Ler</button>
+                        </div>                   
+                
+                    </div>
+                </div>
+
+                <div class="b-livro-item">
+                    <div class="b-capa-bx">
+                        <img src="livros-catalogo\livros (20).jpg" alt="capa" class="b-capa-livro"/>
+                    </div>
+                    <div class="b-livro-content">
+                        <div class="b-descricao-livro">
+                            <h3>Toradora</h3>
+                            <p>
+                                Yuyuko Takemiya e Yasu. 
+                            </p>
+                        </div>
+                        <div class="b-interacao-catalogo">
+                            <button type="button">Ler</button>
+                        </div>                   
+                    </div>
+                </div>
+                                
+            </div>
+        </div>
+    </div>
+    
+    <footer class="rodape">
+        <div><p>Nossa Bibliô © 2023 - Todos os direitos reservados.</p></div>
+    </footer>
+    
+</body>
+</html>
