@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itens enviados</title>
+</head>
+
+<body>
+    <div class="content">
+    <h3 id="corners">RECEBIMENTO DADOS DE FORMULÁRIOS</h3>
+
+    <p class="subTitulo">JS lê os dados enviados via <b>GET</b> de um Form HTML</p>
+        <table class="tableCSS">
+            <tr>
+            <th>Chave</th>
+            <th>Valor</th>
+            </tr>
+            <script language="javascript">
+            function getParameters() {
+                var params = new Array();
+                var paramsRet = new Array();
+                var url = window.location.href; // Obtém a URL
+                var paramsStart = url.indexOf("?"); // Procura ? na URL
+
+                if (paramsStart != -1) {
+                // Encontrou ? na URL
+                var paramString = url.substring(paramsStart + 1); // Retorna parte da URL após ?
+                paramString = decodeURIComponent(paramString); // Decodifica código de URI da URL
+                var params = paramString.split("&"); // Retorna trechos da String separados por &
+                for (var i = 0; i < params.length; i++) {
+                    var pairArray = params[i].split("="); // Retorna trechos da String separados por =
+                    if (pairArray.length == 2) {
+                    paramsRet[pairArray[0]] = pairArray[1];
+                    }
+
+                }
+                return paramsRet;
+                }
+                return null; // Não encontrou ? na URL  
+            }
+
+            var params = getParameters();
+            for (let [key, value] of Object.entries(params)) {
+                document.write("<tr><td style='text-align: center;'><b>" + key + "</b></td><td>" + value + "</td></tr>");
+            }
+
+            function validarFormulario() {
+                // Coloque aqui o restante do seu código de validação
+            }
+            </script>
+            <tr>
+            <th colspan="2">
+                <input type="button" name="Retornar" value="<< Retornar" onclick="window.location.href='form.html'">
+            </th>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
