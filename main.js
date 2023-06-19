@@ -1,5 +1,4 @@
-//Modal 
-
+//Definição da modal 
 function openModal(livro) {
     var txt1 = document.getElementById("txt1");
     var txt2 = document.getElementById("txt2");
@@ -120,6 +119,15 @@ const modal = document.getElementById("modal-resumo");
 function closeModal(){
     document.getElementById("modal-resumo").style.display = "none";
 }
+// Menu dinâmico para garantir responsividade
+
+var menu = document.querySelector('nav ul'); 
+var menuBar = document.querySelector('nav .menu-icon'); 
+//var iconMenu = document.querySelector('nav .menu-icon img'); 
+
+menuBar.addEventListener('click', function () {
+    menu.classList.toggle('active'); 
+})
 
 // Validação do Formulário
 // Variáveis 

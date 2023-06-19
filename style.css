@@ -439,8 +439,6 @@ form button:hover {
     font-size: 18px;
 }
 
-
-
 section .text-bx-about #button-about{
     width: 40%;
     height: 20%;
@@ -722,7 +720,7 @@ section .text-bx-about #button-about{
         padding: 10px;
     }
 
-    nav ul a {
+    nav ul li a {
         font-size: 18px;
         color: white;
     }
